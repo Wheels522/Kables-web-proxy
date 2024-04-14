@@ -23,68 +23,74 @@ function get_cookie(cookie_name) { const value = "; " + document.cookie; const p
 </form>
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
-    .iframe1{
-    border: none;
+    .iframe1 {
+        border: none;
     }
-    .searchbox{
-    width:47%;
-    height:7%;
-    color: #FFFFFF;
-    position: absolute;
-    left:26.5%;
-    top:50%;
+    .searchbox {
+        width: 47%;
+        height: 7%;
+        color: #FFFFFF;
+        position: absolute;
+        left: 26.5%;
+        top: 50%;
     }
-    .search{
-    text-align: center;
-    border-radius: 18px;
-    outline:none;
-    border-radius: 18px;
-    background:transparent;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
-    width:100%;
-    height:100%;
+    .search {
+        text-align: center;
+        border-radius: 18px;
+        outline: none;
+        border-radius: 18px;
+        background: transparent;
+        border: 2px solid #FFFFFF;
+        color: #FFFFFF;
+        width: 100%;
+        height: 100%;
     }
-  
-  
-.title {
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    top: 19%;
-    left: 50%; /* Adjust left position if needed */
-    transform: translateX(-50%);
-    text-align: center;
-    color: grey; /* Change color as needed */
-    font-family: sans-serif;
-    font-size: 80px; /* Adjust font size as needed */
-    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: rainbow 0.5s linear infinite; /* Change animation duration to 0.5s */
-    @keyframes rainbow 
-    0% {
-        background-position: 0% 50%;
+
+    .title {
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        top: 19%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 80px;
     }
-    100% {
-        background-position: 100% 50%;
+
+    .title h1 {
+        background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: rainbow 0.5s linear infinite;
+    }
+
+    @keyframes rainbow {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
     }
 
     ::placeholder {
-    margin: auto;
-    color: #FFFFFF;
-    font-size: 1.2em;
+        margin: auto;
+        color: #FFFFFF;
+        font-size: 1.2em;
     }
+
     html {
-    background-color: skyblue;
+        background-color: skyblue;
     }
-     .x{
-    position: absolute;
-    width:70px;
-    height:70px;
-    top:0px;
-    right:0px;
+
+    .x {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        top: 0px;
+        right: 0px;
     }
 </style>
 <script>
